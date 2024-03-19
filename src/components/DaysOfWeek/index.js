@@ -1,19 +1,17 @@
 import React, { Component } from "react";
 
+const days = ['s','m','t','w','t','f','s'];
 const DayWeek = () => {
   return (
     <div>
-      <span>s</span>
-      <span>m</span>
-      <span>t</span>
-      <span>w</span>
-      <span>t</span>
-      <span>f</span>
-      <span>s</span>
+      {days.map((day,i)=>{
+        return(<td key={i}>{day}</td>)
+      })}
     </div>
   );
 };
-console.log(DayWeek());
+
+
 class DaysOfWeek extends Component {
   render() {
     return (
@@ -25,3 +23,4 @@ class DaysOfWeek extends Component {
 }
 
 export default DaysOfWeek;
+
