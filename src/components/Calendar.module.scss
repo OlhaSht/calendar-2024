@@ -1,0 +1,22 @@
+.calendarWrapper{
+ display: flex;
+ justify-content: space-between;
+}
+
+.wrapper{
+    width: 50%;
+    border: 10px solid blueviolet;
+}
+
+.container{
+    max-width: 50vw;
+    width: 100%;
+    height: 70vh;
+    background-color: hsl(183, 90%, 48%);
+  }
+  .containerMonth{
+    max-width: 50vw;
+    width: 100%;
+    height: 70vh;
+    background-color: #fdf6e9;
+}
