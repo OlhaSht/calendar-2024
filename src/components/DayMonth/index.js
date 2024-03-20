@@ -1,6 +1,6 @@
 import {addDays,endOfMonth, getDate,getWeek, getYear, parse, startOfMonth,startOfWeek,} from "date-fns";
 import React, { Component } from "react";
-import {CurrentDay} from '../../components';
+import DaysOfWeek from '../../components/DaysOfWeek/index';
 import styles from '../Calendar.module.scss';
 
 class DayMonth extends Component {
@@ -46,7 +46,7 @@ class DayMonth extends Component {
 
     return (
       <div className={styles.wrapper}>
-          < CurrentDay />
+          < DaysOfWeek />
           <thead className={styles.containerMonth}>{arrOneWeek(arrWeeks)}</thead>
       </div>
     );
