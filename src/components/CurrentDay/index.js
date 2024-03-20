@@ -15,8 +15,8 @@ class CurrentDay extends Component {
     return (
       <div className={styles.wrapper}>
         <div className={styles.container}>
-          <h2>{format(date, "dd")}</h2>
-          <p>{format(date, "EEEE")}</p>
+          <p className={styles.currentDay}>{format(date, "EEEE")}</p>
+          <h1 className={styles.currentNumber}>{format(date, "dd")}</h1>
         </div>
       </div>
     );

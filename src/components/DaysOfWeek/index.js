@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styles from "../Calendar.module.scss";
 
 const days = ['s','m','t','w','t','f','s'];
 const DayWeek = () => {
@@ -15,7 +16,7 @@ const DayWeek = () => {
 class DaysOfWeek extends Component {
   render() {
     return (
-      <div>
+      <div className={styles.containerMonth}>
         <DayWeek />
       </div>
     );
